@@ -1,0 +1,6 @@
+resume_chunks.pkl
+__pycache__/
+*.pyc
+*.pkl
+.DS_Store
+.streamlit/secrets.toml
