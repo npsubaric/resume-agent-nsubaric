@@ -1,24 +1,13 @@
 import streamlit as st
-
-st.set_page_config(
-    page_title="Ask My Resume",
-    page_icon="🧠",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
-
-# Hide Streamlit's default UI
-st.markdown("""
-    <style>
-        #MainMenu {visibility: hidden;}
-        header {visibility: hidden;}
-        footer {visibility: hidden;}
-        .block-container {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
+st.set_page_config(page_title="Resume Chatbot", page_icon="🤖", layout="centered", initial_sidebar_state="collapsed")
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 import openai
