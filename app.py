@@ -1,4 +1,14 @@
 import streamlit as st
+st.set_page_config(page_title="Resume Chatbot", page_icon="🤖", layout="centered", initial_sidebar_state="collapsed")
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 import openai
 import os
 import pickle
